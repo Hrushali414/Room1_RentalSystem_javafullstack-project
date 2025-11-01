@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Roo
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Room Rental Management System</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: pink;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    form {
+        background-color: #fff;
+        width: 350px;
+        margin: 40px auto;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    input[type="text"], input[type="number"] {
+        width: 90%;
+        padding: 8px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #ff1493;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #c71585;
+    }
+</style>
+</head>
+<body>
+
+<!-- marquee heading -->
+<marquee behavior="alternate" direction="right" scrollamount="10" style="color:blue; font-size:28px; font-weight:bold;">
+    Welcome to Room Rental Management System 
+</marquee>
+
+<form action="RoomServlet" method="post">
+    <h2>Enter Room Details</h2>
+    <input type="text" name="tenant" placeholder="Tenant Name" required><br>
+    <input type="text" name="room" placeholder="Room Number" required><br>
+    <input type="text" name="contact" placeholder="Contact Number" required><br>
+    <input type="number" name="rent" placeholder="Rent Amount" required><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
